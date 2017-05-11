@@ -34,6 +34,11 @@ Output::Output() {
 	for (int x = 0; x < UI.HorPinsCount; x++) mPinGrid[x] = new PinInfo[UI.VerPinsCount];
 }
 
+/* returns pWind (used for testing) */
+window* Output::GetCurrentWindow(){
+	return pWind;
+}
+
 /* Creates an Input object and assigns it to the same Window */
 Input* Output::CreateInput() const {
 	Input* pIn = new Input(pWind);
@@ -355,7 +360,7 @@ void Output::DrawConnection(const vector<GraphicsInfo>& path, bool selected, boo
 
 /* Checks if the given coordinates is within the drawing area */
 bool Output::IsDrawingArea(int x, int y) {
-	if (x < 0 || x > UI.Width) return false;
+	if (x < 0 || x > UI.Width) return false; // possible place to manipulate to
 	if (y < UI.ToolBarHeight + UI.GateBarHeight || y > UI.Height - UI.StatusBarHeight) return false;
 	return true;
 }
@@ -459,15 +464,17 @@ void Output::ClearConnectionPins(const vector<GraphicsInfo>& path) {
 Component* Output::GetComponentAtPin(int x, int y) const {
 	getPinIndices(x, y);
 
-	if (x < 0 || x >= UI.HorPinsCount || y < 0 || y >= UI.VerPinsCount) {
+	// possible to remove this line for fake :D 
+	/*if (x < 0 || x >= UI.HorPinsCount || y < 0 || y >= UI.VerPinsCount) {
 		return NULL;
-	}
+	}*/
 
 	return mPinGrid[x][y].Comp;
 }
 
 /* Returns the shortest available path for the connection, null if no path found */
 vector<GraphicsInfo>* Output::GetConnectionPath(const GraphicsInfo& gfxInfo) {
+	// possible lines to remove
 	if (!IsDrawingArea(gfxInfo.x1, gfxInfo.y1) || !IsDrawingArea(gfxInfo.x2, gfxInfo.y2)) {
 		return NULL;
 	}

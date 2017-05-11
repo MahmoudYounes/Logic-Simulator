@@ -25,7 +25,9 @@ bool AddConnection::ReadActionParameters() {
 		mAppManager->UpdateInterface();
 
 		pOut->PrintMsg("Connection: select the source pin");
-		pIn->WaitMouseClick(mGfxInfo.x1, mGfxInfo.y1);
+		//pIn->WaitMouseClick(mGfxInfo.x1, mGfxInfo.y1);
+		mGfxInfo.x1 = 15 + UI.PinOffset;
+		mGfxInfo.y1 = UI.GateBarHeight + UI.ToolBarHeight + 15 + UI.PinOffset;
 		pOut->ClearStatusBar();
 	}
 
@@ -36,7 +38,9 @@ bool AddConnection::ReadActionParameters() {
 	
 	if (!mIsLoaded) {
 		pOut->PrintMsg("Connection: select the destination pin");
-		pIn->WaitMouseClick(mGfxInfo.x2, mGfxInfo.y2);
+		//pIn->WaitMouseClick(mGfxInfo.x2, mGfxInfo.y2);
+		mGfxInfo.x2 = 30 + UI.PinOffset;
+		mGfxInfo.y2 = 30 + UI.PinOffset + UI.GateBarHeight + UI.ToolBarHeight;
 		pOut->ClearStatusBar();
 	}
 

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "graphics_prj", "graphics_prj.vcxproj", "{AA10A871-5060-4858-9CB5-CAE63E0A749B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LogicSimulator", "graphics_prj.vcxproj", "{AA10A871-5060-4858-9CB5-CAE63E0A749B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

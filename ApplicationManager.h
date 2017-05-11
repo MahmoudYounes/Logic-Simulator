@@ -92,6 +92,10 @@ public:
 	/* Releases all the memory used by the components */
 	void ReleaseMemory();
 
+	/* Get Components List */
+	Component** GetComponentList();
+
 	/* Destructor */
 	~ApplicationManager();
+
 };

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="8" failures="5" disabled="0" errors="0" timestamp="2017-05-10T12:05:58" time="0.329" name="AllTests">
+  <testsuite name="TestOutput" tests="7" failures="4" disabled="0" errors="0" time="0.282">
+    <testcase name="TestIsDrawingArea" status="run" time="0.078" classname="TestOutput">
+      <failure message="c:\users\mahmoud\desktop\workdir\swtesting\logic-simulator\applicationmanagertest.cpp:431&#x0A;Value of: out-&gt;IsDrawingArea(0, UI.ToolBarHeight + UI.GateBarHeight)&#x0A;  Actual: true&#x0A;Expected: false" type=""><![CDATA[c:\users\mahmoud\desktop\workdir\swtesting\logic-simulator\applicationmanagertest.cpp:431
+Value of: out->IsDrawingArea(0, UI.ToolBarHeight + UI.GateBarHeight)
+  Actual: true
+Expected: false]]></failure>
+    </testcase>
+    <testcase name="TestMarkPins" status="run" time="0.032" classname="TestOutput" />
+    <testcase name="TestIsEmptyArea" status="run" time="0.032" classname="TestOutput" />
+    <testcase name="TestMarkConnectionPins" status="run" time="0.063" classname="TestOutput">
+      <failure message="c:\users\mahmoud\desktop\workdir\swtesting\logic-simulator\applicationmanagertest.cpp:516&#x0A;Value of: out-&gt;IsEmptyArea(g2)&#x0A;  Actual: true&#x0A;Expected: false" type=""><![CDATA[c:\users\mahmoud\desktop\workdir\swtesting\logic-simulator\applicationmanagertest.cpp:516
+Value of: out->IsEmptyArea(g2)
+  Actual: true
+Expected: false]]></failure>
+      <failure message="c:\users\mahmoud\desktop\workdir\swtesting\logic-simulator\applicationmanagertest.cpp:517&#x0A;Value of: out-&gt;GetComponentAtPin(g2.x1, g2.y1) != NULL&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[c:\users\mahmoud\desktop\workdir\swtesting\logic-simulator\applicationmanagertest.cpp:517
+Value of: out->GetComponentAtPin(g2.x1, g2.y1) != NULL
+  Actual: false
+Expected: true]]></failure>
+    </testcase>
+    <testcase name="TestClearConnectionPins" status="run" time="0.031" classname="TestOutput">
+      <failure message="c:\users\mahmoud\desktop\workdir\swtesting\logic-simulator\applicationmanagertest.cpp:544&#x0A;Value of: out-&gt;IsEmptyArea(g1)&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[c:\users\mahmoud\desktop\workdir\swtesting\logic-simulator\applicationmanagertest.cpp:544
+Value of: out->IsEmptyArea(g1)
+  Actual: false
+Expected: true]]></failure>
+    </testcase>
+    <testcase name="TestGetComponentAtPin" status="run" time="0.015" classname="TestOutput">
+      <failure message="c:\users\mahmoud\desktop\workdir\swtesting\logic-simulator\applicationmanagertest.cpp:575&#x0A;Value of: out-&gt;GetComponentAtPin(-1, -1) == NULL&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[c:\users\mahmoud\desktop\workdir\swtesting\logic-simulator\applicationmanagertest.cpp:575
+Value of: out->GetComponentAtPin(-1, -1) == NULL
+  Actual: false
+Expected: true]]></failure>
+      <failure message="c:\users\mahmoud\desktop\workdir\swtesting\logic-simulator\applicationmanagertest.cpp:576&#x0A;Value of: out-&gt;GetComponentAtPin(-1, UI.VerPinsCount) == NULL&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[c:\users\mahmoud\desktop\workdir\swtesting\logic-simulator\applicationmanagertest.cpp:576
+Value of: out->GetComponentAtPin(-1, UI.VerPinsCount) == NULL
+  Actual: false
+Expected: true]]></failure>
+      <failure message="c:\users\mahmoud\desktop\workdir\swtesting\logic-simulator\applicationmanagertest.cpp:577&#x0A;Value of: out-&gt;GetComponentAtPin(UI.HorPinsCount, -1) == NULL&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[c:\users\mahmoud\desktop\workdir\swtesting\logic-simulator\applicationmanagertest.cpp:577
+Value of: out->GetComponentAtPin(UI.HorPinsCount, -1) == NULL
+  Actual: false
+Expected: true]]></failure>
+      <failure message="c:\users\mahmoud\desktop\workdir\swtesting\logic-simulator\applicationmanagertest.cpp:578&#x0A;Value of: out-&gt;GetComponentAtPin(UI.HorPinsCount, UI.VerPinsCount) == NULL&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[c:\users\mahmoud\desktop\workdir\swtesting\logic-simulator\applicationmanagertest.cpp:578
+Value of: out->GetComponentAtPin(UI.HorPinsCount, UI.VerPinsCount) == NULL
+  Actual: false
+Expected: true]]></failure>
+    </testcase>
+    <testcase name="TestGetConnectionPath" status="run" time="0" classname="TestOutput" />
+  </testsuite>
+  <testsuite name="TestActions" tests="1" failures="1" disabled="0" errors="0" time="0.047">
+    <testcase name="TestAddConnection" status="run" time="0.047" classname="TestActions">
+      <failure message="c:\users\mahmoud\desktop\workdir\swtesting\logic-simulator\applicationmanagertest.cpp:612&#x0A;Value of: a-&gt;ReadActionParameters()&#x0A;  Actual: false&#x0A;Expected: true" type=""><![CDATA[c:\users\mahmoud\desktop\workdir\swtesting\logic-simulator\applicationmanagertest.cpp:612
+Value of: a->ReadActionParameters()
+  Actual: false
+Expected: true]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

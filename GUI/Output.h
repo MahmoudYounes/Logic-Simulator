@@ -27,6 +27,9 @@ public:
 	/* Creates a new Window object */
 	window* CreateWind(int w, int h, int x, int y) const;
 
+	/* returns the current window stored in output class */
+	window* GetCurrentWindow();
+
 	/* Chnages the title of the Window */
 	void ChangeTitle(const string& title) const;
 

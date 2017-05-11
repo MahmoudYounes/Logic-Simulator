@@ -1,21 +1,7 @@
 #include "ApplicationManager.h"
-#pragma comment(linker, "/SUBSYSTEM:windows /ENTRY:mainCRTStartup")
+#include "gtest\gtest.h"
 
-int main() {
-	ActionType ActType;
-	ApplicationManager AppManager;
-
-	do {		
-		// Read user action
-		ActType = AppManager.GetUserAction();
-
-		// Exexute the action
-		AppManager.ExecuteAction(ActType);
-
-		// Update the drawing window
-		AppManager.UpdateInterface();
-
-	} while (ActType != EXIT);
-		
-	return 0;
+int main(int argc, char **argv) {
+	::testing::InitGoogleTest(&argc, argv);
+	return RUN_ALL_TESTS();
 }

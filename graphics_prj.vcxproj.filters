@@ -233,6 +233,12 @@
     <ClCompile Include="Actions\Exit.cpp">
       <Filter>Actions</Filter>
     </ClCompile>
+    <ClCompile Include="ApplicationManagerTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestUtils.h">
+      <Filter>Tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actions\Action.h">
@@ -456,5 +462,11 @@
     <Filter Include="GUI">
       <UniqueIdentifier>{e9b7c77c-4258-4c7f-a59e-a041dec06954}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{6c8d2820-46cd-4561-9690-efdbecebca12}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>

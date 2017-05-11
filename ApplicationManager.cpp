@@ -389,3 +389,7 @@ ApplicationManager::~ApplicationManager() {
 	delete pIn;
 	delete pOut;
 }
+
+Component** ApplicationManager::GetComponentList(){
+	return mCompList;
+}
